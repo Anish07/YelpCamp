@@ -145,8 +145,8 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/contact', (req, res, next) => {
-    res.render('contact')
+app.get('/aboutus', (req, res, next) => {
+    res.render('about')
 });
 
 app.use('/', userRoutes);
