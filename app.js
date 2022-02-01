@@ -26,7 +26,7 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
-mongoose.connect('dbUrl');
+mongoose.connect(dbUrl);
 
 const db = mongoose.connection;
 
