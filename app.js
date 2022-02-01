@@ -145,6 +145,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/contact', (req, res, next) => {
+    res.render('contact')
+});
+
 app.use('/', userRoutes);
 app.use('/campgrounds', campgroundRoutes)
 app.use('/campgrounds/:id/reviews', reviewRoutes)
